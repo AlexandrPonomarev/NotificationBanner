@@ -98,7 +98,7 @@ open class NotificationBanner: BaseNotificationBanner {
             subtitleLabel = UILabel()
 //            subtitleLabel!.type = .left
             subtitleLabel!.font = subtitleFont
-            subtitleLabel!.numberOfLines = 0
+            subtitleLabel!.numberOfLines = 2
             subtitleLabel!.textColor = .white
             subtitleLabel!.text = subtitle
             labelsView.addSubview(subtitleLabel!)
