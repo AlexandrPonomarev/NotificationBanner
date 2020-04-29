@@ -25,7 +25,7 @@ import MarqueeLabel
 open class NotificationBanner: BaseNotificationBanner {
     
     /// The bottom most label of the notification if a subtitle is provided
-    public private(set) var subtitleLabel: MarqueeLabel?
+    public private(set) var subtitleLabel: UILabel?
     
     /// The view that is presented on the left side of the notification
     private var leftView: UIView?
@@ -95,8 +95,8 @@ open class NotificationBanner: BaseNotificationBanner {
         }
         
         if let subtitle = subtitle {
-            subtitleLabel = MarqueeLabel()
-            subtitleLabel!.type = .left
+            subtitleLabel = UILabel()
+//            subtitleLabel!.type = .left
             subtitleLabel!.font = subtitleFont
             subtitleLabel!.numberOfLines = 0
             subtitleLabel!.textColor = .white
@@ -174,7 +174,7 @@ open class NotificationBanner: BaseNotificationBanner {
     
     internal override func updateMarqueeLabelsDurations() {
         super.updateMarqueeLabelsDurations()
-        subtitleLabel?.speed = .duration(CGFloat(duration <= 3 ? 0.5 : duration - 3))
+//        subtitleLabel?.speed = .duration(CGFloat(duration <= 3 ? 0.5 : duration - 3))
     }
     
 }

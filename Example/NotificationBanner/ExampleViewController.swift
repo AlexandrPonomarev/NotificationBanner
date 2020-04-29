@@ -62,8 +62,7 @@ extension ExampleViewController: ExampleViewDelegate {
         switch index {
         case 0:
             // Basic Success Notification
-            let banner = NotificationBanner(title: "Basic Success Notification",
-                                            subtitle: "Extremely Customizable!",
+            let banner = NotificationBanner(subtitle: "error.localizedDescription sdfdsfdsfdsfdsf  sdfds ds fds fdsf ds fdsf dsf ds ds ds dsf d fsdfds fdsfds fds fd sf d fds fds fds fds fds df sdf ds fsd fds ds fds fds fd sfds fds fds fsdf ds sd fds  dds fds ds ferror.localizedDescription sdfdsfdsfdsfdsf  sdfds ds fds fdsf ds fdsf dsf ds ds ds dsf d fsdfds fdsfds fds fd sf d fds fds fds fds fds df sdf ds fsd fds ds fds fds fd sfds fds fds fsdf ds sd fds  dds fds ds f",
                                             style: .success)
             banner.delegate = self
             
