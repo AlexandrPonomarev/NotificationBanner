@@ -37,7 +37,7 @@ open class NotificationBanner: BaseNotificationBanner {
     private var titleFont: UIFont = UIFont.systemFont(ofSize: 17.5, weight: UIFont.Weight.bold)
     
     /// Font used for the subtitle label
-    private var subtitleFont: UIFont = UIFont.systemFont(ofSize: 15.0)
+    private var subtitleFont: UIFont = UIFont.systemFont(ofSize: 12, weight: .semibold)
 
     public init(title: String? = nil,
                 subtitle: String? = nil,
@@ -98,7 +98,7 @@ open class NotificationBanner: BaseNotificationBanner {
             subtitleLabel = MarqueeLabel()
             subtitleLabel!.type = .left
             subtitleLabel!.font = subtitleFont
-            subtitleLabel!.numberOfLines = 1
+            subtitleLabel!.numberOfLines = 0
             subtitleLabel!.textColor = .white
             subtitleLabel!.text = subtitle
             labelsView.addSubview(subtitleLabel!)
